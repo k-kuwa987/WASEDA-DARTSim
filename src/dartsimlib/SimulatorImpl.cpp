@@ -284,6 +284,21 @@ bool SimulatorImpl::step(const TacticList& tactics, double decisionTimeMsec) {
 			currentConfig.altitudeLevel = currentConfig.altitudeLevel - 2;
 		}
 	}
+	auto ttcIncAlt3 = currentConfig.ttcIncAlt3;
+	if (ttcIncAlt3 > 0) {
+		currentConfig.ttcIncAlt3 = --ttcIncAlt3;
+		if (ttcIncAlt3 == 0) {
+			currentConfig.altitudeLevel = currentConfig.altitudeLevel + 3;
+		}
+	}
+
+	auto ttcDecAlt3 = currentConfig.ttcDecAlt3;
+	if (ttcDecAlt3 > 0) {
+		currentConfig.ttcDecAlt3 = --ttcDecAlt3;
+		if (ttcDecAlt3 == 0) {
+			currentConfig.altitudeLevel = currentConfig.altitudeLevel - 3;
+		}
+	}
 
 	return targetDetectedInThisStep;
 }
@@ -314,6 +329,18 @@ TeamConfiguration SimulatorImpl::executeTactic(string tactic, const TeamConfigur
 			newConfig.ttcDecAlt2 = changeAltitudeLatencyPeriods;
 		} else {
 			newConfig.altitudeLevel = newConfig.altitudeLevel - 2;
+		}
+	} else if (tactic == INC_ALTITUDE3) {
+		if (changeAltitudeLatencyPeriods > 0) {
+			newConfig.ttcIncAlt3 = changeAltitudeLatencyPeriods;
+		} else {
+			newConfig.altitudeLevel = newConfig.altitudeLevel + 3;
+		}
+	} else if (tactic == DEC_ALTITUDE3) {
+		if (changeAltitudeLatencyPeriods > 0) {
+			newConfig.ttcDecAlt3 = changeAltitudeLatencyPeriods;
+		} else {
+			newConfig.altitudeLevel = newConfig.altitudeLevel - 3;
 		}
 	} else if (tactic == GO_TIGHT) {
 		newConfig.formation = TeamConfiguration::Formation::TIGHT;

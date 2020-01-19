@@ -253,6 +253,8 @@ public:
 	static const std::string DEC_ALTITUDE;
 	static const std::string INC_ALTITUDE2;
 	static const std::string DEC_ALTITUDE2;
+	static const std::string INC_ALTITUDE3;
+	static const std::string DEC_ALTITUDE3;
 	static const std::string GO_TIGHT;
 	static const std::string GO_LOOSE;
 	static const std::string ECM_ON;
