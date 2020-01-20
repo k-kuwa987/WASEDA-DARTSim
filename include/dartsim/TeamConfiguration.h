@@ -46,6 +46,9 @@ public:
 	unsigned ttcDecAlt; /**< time in periods to complete altitude decrease, 0 means not executing */
 	unsigned ttcIncAlt2; /**< time in periods to complete altitude increase 2, 0 means not executing */
 	unsigned ttcDecAlt2; /**< time in periods to complete altitude decrease 2, 0 means not executing */
+	unsigned ttcIncAlt3; /**< time in periods to complete altitude increase 3, 0 means not executing */
+	unsigned ttcDecAlt3; /**< time in periods to complete altitude decrease 3, 0 means not executing */
+
 };
 
 } /* namespace sim */

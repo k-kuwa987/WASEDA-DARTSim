@@ -367,7 +367,9 @@ Json AdaptInterface::convertTeamStateToJson(const dart::sim::TeamState& state) c
 		{"ttcIncAlt", int(state.config.ttcIncAlt)},
 		{"ttcDecAlt", int(state.config.ttcDecAlt)},
 		{"ttcIncAlt2", int(state.config.ttcIncAlt2)},
-		{"ttcDecAlt2", int(state.config.ttcDecAlt2)}
+		{"ttcDecAlt2", int(state.config.ttcDecAlt2)},
+		{"ttcIncAlt3", int(state.config.ttcIncAlt3)},
+		{"ttcDecAlt3", int(state.config.ttcDecAlt3)}
 	};
 
 	return jsonState;
