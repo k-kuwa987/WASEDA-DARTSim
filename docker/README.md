@@ -32,12 +32,12 @@ You can stop the running container with `docker stop dartsim` and start again
 with `docker start dartsim`.
 
 # for updated Dockerfile
-repo needs to be downloaded first.
-step 1. go to /WASEDA-DARTSim/docker
-step 2. to build the Docker image, run the command
-```docker build -t dartsim/waseda .```
-step 3. to run the Docker container, run the command
-```docker run -d -p 5901:5901 -p 6901:6901 --name dartsim dartsim/waseda```
-browse http://localhost:6901/ to view the docker container
-this will have the same password as the original ```vncpassword```
+repo needs to be downloaded first.  
+step 1. go to /WASEDA-DARTSim/docker  
+step 2. to build the Docker image, run the command  
+```docker build -t dartsim/waseda .```  
+step 3. to run the Docker container, run the command  
+```docker run -d -p 5901:5901 -p 6901:6901 --name dartsim dartsim/waseda```  
+browse http://localhost:6901/ to view the docker container  
+this will have the same password as the original ```vncpassword```  
 both original docker container and the WASEDA-DARTSim docker container cannot be run simultaneously, unless the different ports are specified.
