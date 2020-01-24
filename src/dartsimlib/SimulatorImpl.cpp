@@ -232,7 +232,7 @@ bool SimulatorImpl::step(const TacticList& tactics, double decisionTimeMsec) {
 	/* simulate threats */
 	destroyed = pThreatSim->isDestroyed(threatEnv, currentConfig, position);
 	if (destroyed) {
-		cout << "Team destroyed at position " << position << endl;
+		cout << "Team destroyed at position " << position.X << ";" << currentConfig.altitudeLevel << endl;
 		return targetDetectedInThisStep;
 	}
 
