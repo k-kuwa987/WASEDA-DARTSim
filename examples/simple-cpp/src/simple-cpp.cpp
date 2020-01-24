@@ -131,7 +131,7 @@ int main(int argc, char** argv) {
 	while (!dartsim->finished()) {
 		auto startTime = myclock::now();
 		auto state = dartsim->getState();
-		cout << "current position: " << state.position << endl;
+		cout << "current position: " << state.position.x << ";" << state.config.altitudeLevel << endl;
 		auto threats = dartsim->readForwardThreatSensor(horizon);
 		auto targets = dartsim->readForwardTargetSensor(horizon);
 
