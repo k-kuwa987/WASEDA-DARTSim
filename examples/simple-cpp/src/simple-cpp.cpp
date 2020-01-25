@@ -139,6 +139,7 @@ int main(int argc, char** argv) {
 		bool threatAhead = any_of(threats.begin(), threats.end(), [](bool p){return p;});
 		if (threatAhead && state.config.altitudeLevel < maxAltitude) {
 			tactics.insert(Simulator::INC_ALTITUDE3);
+
 		} else {
 			bool targetAhead = any_of(targets.begin(), targets.end(), [](bool p){return p;});
 			if (targetAhead && state.config.altitudeLevel > minAltitude) {
