@@ -1,0 +1,8 @@
+[2020-01-24 10:36:25.996] [sharedprocess] [info] main {"machineId":"ddcf9714969d36e046a331f76110b8eadc158dda6ab6de602e2361e4f256ad55","windowId":2}
+[2020-01-24 10:37:02.267] [sharedprocess] [info] Installing extension: ms-vscode.cpptools
+[2020-01-24 10:37:03.031] [sharedprocess] [info] Downloaded extension: ms-vscode.cpptools /tmp/e05751bf-7708-44c7-9516-f646a34d07d5
+[2020-01-24 10:37:05.738] [sharedprocess] [info] Extracted extension to /headless/.vscode/extensions/.ms-vscode.cpptools-0.26.3: ms-vscode.cpptools
+[2020-01-24 10:37:05.738] [sharedprocess] [info] Renamed to /headless/.vscode/extensions/ms-vscode.cpptools-0.26.3
+[2020-01-24 10:37:05.745] [sharedprocess] [info] Installation completed. ms-vscode.cpptools
+[2020-01-24 10:37:05.909] [sharedprocess] [info] Extensions installed successfully: ms-vscode.cpptools
+[2020-01-24 10:37:05.965] [sharedprocess] [info] Starting to clean up unused language packs.
